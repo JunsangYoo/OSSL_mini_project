@@ -1,0 +1,4 @@
+number of files : 2;
+Lebron James;F;23;5000;4500;320;
+Kyrie Irving;G;11;2000;1200;80;
+

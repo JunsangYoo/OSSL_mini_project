@@ -1,0 +1,4 @@
+number of files : 2;
+Stephen Curry;G;30;3000;1500;150;
+Kevin Durant;F;35;4200;1700;200;
+
