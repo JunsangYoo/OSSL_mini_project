@@ -8,6 +8,7 @@
 * **Overview**
 This program is a menu driven interface.  
 This is how the menu looks like:  
+>    Basketball Team Management Program  
 >    1. Add new player
 >    2. List out players information
 >    3. Update player detail
