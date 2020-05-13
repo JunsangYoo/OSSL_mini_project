@@ -143,3 +143,50 @@ void sort_record(Record records[]){
   }
   printf("Sorting complete\n");
 }
+
+void advanced_search (Record records[]){
+    
+    char input_name[30] = "";
+    char input_pos = 'F';
+    int input_number = -1;
+
+        
+    printf("Enter the name of the player you wish to search : ");
+    fgets(input_name, 30, stdin);
+    input_name[strlen(input_name) - 1] = '\0';
+    
+    while(1){
+    	printf("Enter the position of the player you wish to search ('F', 'G', 'C') : ");
+        scanf("%c", &input_pos);
+        while (getchar() != '\n');      //clear input buffer
+        if(input_pos == 'F' || input_pos == 'G' || input_pos == 'C')
+        	break;
+        else
+                printf("Invalid position.\n F : forward G : guard C : center\n");
+    }
+      
+    printf("Enter back number of the player you wish to search : ");
+    scanf("%d", &input_number);
+    while (getchar() != '\n');  //clear input buffer
+     
+    
+    for(int i = 0; records[i].empty != 0; i++){
+      if(records[i].empty == 1){
+          if( ( !strcmp(input_name,records[i].name) ) && ( input_pos == records[i].pos ) && (input_number == records[i].number) )
+          {
+              printf("The result |  The information of the player you want \n");
+              printf("name : %s\n", records[i].name);
+              printf("position : %c\n", records[i].pos);
+              printf("back number : %d\n", records[i].number);
+              printf("total points : %d\n", records[i].points);
+              printf("total assists : %d\n", records[i].assists);
+              printf("games played : %d\n", records[i].games);
+              printf("\n");
+            
+          }
+        
+          
+      }
+
+   }  
+}

@@ -32,9 +32,9 @@ int main()
 //Output : none
 // - displays the menu for the user to see and decide what function to use
 void display_menu(){
-  printf("\n");
+  	printf("\n");
 	printf("**********************************\n");
-  printf("Basketball Team Management Program\n");
+  	printf("Basketball Team Management Program\n");
  	printf("**********************************\n");
 	printf("1. Add new player\n");
 	printf("2. List out players information\n");
@@ -42,12 +42,13 @@ void display_menu(){
 	printf("4. Delete player\n");
 	printf("5. Search\n");
 	printf("6. Load a new data file\n");
-  printf("7. Add records from an outside data file\n");
+	printf("7. Add records from an outside data file\n");
 	printf("8. Save to a data file\n");
-  printf("9. Make a report file\n");
+  	printf("9. Make a report file\n");
 	printf("10. Optimize the records\n");
 	printf("11. Sort\n");
-  printf("q. quit\n");
+        printf("12. Find the player in advanced search way\n");
+	printf("q. quit\n");
 }
 
 
@@ -79,6 +80,8 @@ void input_handler(char input[], Record records[]){
     defragment(records);
   else if(!strcmp(input, "11"))
     sort_record(records);
+  else if(!strcmp(input, "12"))
+    advanced_search(records);
   else if(!strcmp(input, "q") || !strcmp(input, "Q"))
     printf("Terminating... bye!\n");
   else
