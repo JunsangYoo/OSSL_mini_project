@@ -5,9 +5,26 @@
 ## Owner : Junsang Yoo
 
 ---
+* **Overview**
+This program is a menu driven interface.  
+This is how the menu looks like:  
+>    1. Add new player
+>    2. List out players information
+>    3. Update player detail
+>    4. Delete player
+>    5. Search
+>    6. Load a new data file
+>    7. Add records from an outside data file
+>    8. Save to a data file
+>    9. Make a report file
+>    10. Optimize the records
+>    11. Sort
+    
 * **Functions**  
 The functions consists mainly of CRUD type functions.  
+These basic functions are written in base.c  
 The extra credit functions are defragmentation and sorting function.  
+These extra functions are written in extras.c  
 
 * **About the records**
 The datas are saved in a single array that cam hold up to 1000 records which is made in the main function. 
